@@ -1,6 +1,6 @@
 const config = {
   locales: [
-    // 'ar',
+    // 'ar',name
     // 'fr',
     // 'cs',
     'de',
@@ -36,4 +36,10 @@ const bootstrap = (app) => {
 export default {
   config,
   bootstrap,
+  translations: {
+    en: {
+      'app.components.LeftMenu.navbrand.name': 'Custom name',
+      'app.components.LeftMenu.navbrand.title': 'Custom title',
+    }
+  }
 };
