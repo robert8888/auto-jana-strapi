@@ -4,6 +4,7 @@ module.exports = ({ env }) => {
   const { host, port, database, user, password } = parse(
     env('DATABASE_URL')
   );
+  console.log('the database url',env('DATABASE_URL'))
   return {
     connection: {
       client: 'postgres',
